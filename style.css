@@ -28,6 +28,8 @@ body{
 .header{
     background-color: var(--dark-gray);
     grid-column: 1/-1;
+    align-items: center;
+    text-align: center;
     color: var(--white);
     font-size: var(--big-font-size);
     justify-content: center;
