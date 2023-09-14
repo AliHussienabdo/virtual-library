@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">Library</div>
+        <div class="addBook-div"><button class="add-book-btn">+ Add book</button></div>
+        <table>
+            <tr class="first-row">
+                <td>Book</td>
+                <td>Author</td>
+                <!-- <td>Date</th> -->
+                <td>Pages</td>
+                <td>Is Read</td>
+                <td>delete</td>
+            </tr>
+        </table>
+        <form method="post" >
+                <legend>Add another Book</legend>
+                <input type="text" id="book-name" required placeholder="Book Name">
+
+                <input type="text" id="author-name" required placeholder="Author">
+
+                <input type="number" id="num-pages" required placeholder="Number of readers">
+                <div class="add-check-box">
+                    <p>
+                        Did you read it : 
+                        <input type="checkbox" id="read-check" class="fuck" vlaue="Read">
+                    </p>
+                    
+                </div>
+                
+                <button class="submit-btn submit">submit</button>
+
+                
+        </form>
+
+
+
+        <!-- <div class="submit"><input type="submit" value="Register" class="submit-btn" /></div> -->
+        
+        
+    </div>
+
+    <p class="error-msg">ERROR,THIS BOOK EXIST</p>
+
+    <div class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
