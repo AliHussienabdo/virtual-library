@@ -49,7 +49,7 @@ body{
     background-color: var(--azure);
     border: 0;
     border-radius: var(--border-radius);
-    transition: all 150ms ease;
+    transition: all 100ms ease;
 }
 .add-book-btn:hover{
     background-color: var(--dark-gray);
@@ -186,7 +186,7 @@ input[type="checkbox"]:checked{
     width: 100%;
     height: 100%;
     backdrop-filter: blur(3px);
-    background-color: hsl(189, 27%, 60%,0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     
 }
 .overlay.focus-overlay{
@@ -214,7 +214,7 @@ input[type="checkbox"]:checked{
     top: 40px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .error-msg {
         
         box-sizing: border-box;
@@ -232,10 +232,17 @@ input[type="checkbox"]:checked{
     border-radius: 5px;
     padding: 5px;
     font-size: var(--small-font-size);
+    transition: all 100ms ease-in-out;
 }
 .btn-read{
-    background-color: rgb(134, 199, 134);
+    background-color: rgb(110, 213, 110);
 }
 .btn-not-read{
-    background-color: rgb(177, 133, 130);
+    background-color: rgba(174, 119, 115, 0.998);
+}
+
+.btn-not-read:hover, .btn-read:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.9;
 }
