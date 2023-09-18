@@ -124,7 +124,8 @@ td{
 legend {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
-    color: var(--white);}
+    color: var(--white);
+}
 input[type="text"], input[type="number"]{
     border-radius: var(--border-radius);
     width: 200px;
@@ -193,7 +194,7 @@ input[type="checkbox"]:checked{
     display: block;
 }
 
-.error-msg{
+/* .error-msg{
     position: fixed;
     top: 0;
     left: 38%;
@@ -208,19 +209,12 @@ input[type="checkbox"]:checked{
     transition: all 0.2s ease-in-out;
     z-index: 1;
     transform: rotate(363deg);
-}
-.error-msg.focus{
-    scale: 1;
-    top: 40px;
-}
-
-@media screen and (max-width: 500px) {
-    .error-msg {
-        
-        box-sizing: border-box;
-        top: 40%;
-        left: 30%;
-    }
+} */
+.error-msg{
+    color: red;
+    text-shadow: 0 0 10px white, 0 0 10px white;
+    /* -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white; */
 }
 
 
