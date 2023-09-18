@@ -1,8 +1,10 @@
-function Book(book, author, pages, read) {
-    this.book = book;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
+class Book {
+    constructor(book, author, pages, read) {
+        this.book = book;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
 }
 
 function addBookToLibrary(newBook){
